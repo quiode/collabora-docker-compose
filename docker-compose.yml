@@ -11,3 +11,5 @@ services:
             - 'MKNOD'
         restart: always
         container_name: collabora
+        labels:
+            - 'com.centurylinklabs.watchtower.enable=true'
