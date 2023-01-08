@@ -11,9 +11,3 @@ services:
             - 'MKNOD'
         restart: always
         container_name: collabora
-    watchtower:
-        image: containrrr/watchtower
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
-        command: collabora --cleanup --include-restarting
-        restart: always
